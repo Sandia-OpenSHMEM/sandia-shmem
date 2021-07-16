@@ -783,7 +783,7 @@ define(`SHMEM_CTX_C11_GEN_PUT_SIGNAL', `            $2*: shmem_ctx_$1_put_signal
     _Generic(SHMEM_C11_TYPE_EVAL_PTR(SHMEM_C11_ARG0(__VA_ARGS__)), \
         shmem_ctx_t: \
         _Generic(SHMEM_C11_TYPE_EVAL_PTR(SHMEM_C11_ARG1(__VA_ARGS__)), \
-SHMEM_BIND_C11_RMA(`SHMEM_CTX_C11_GEN_PUT_SIGNAL', `, \') \
+SHMEM_BIND_C11_RMA(`SHMEM_CTX_C11_GEN_PUT_SIGNAL', `, \'), \
             default: shmem_ctx_c11_generic_selection_failed \
         ), \
 SHMEM_BIND_C11_RMA(`SHMEM_C11_GEN_PUT_SIGNAL', `, \') \
